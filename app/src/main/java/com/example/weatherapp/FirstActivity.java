@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.weatherapp.Food.FoodActivity;
 import com.example.weatherapp.News.NewsAPIActivity;
 
 public class FirstActivity extends AppCompatActivity {
@@ -22,5 +23,8 @@ public class FirstActivity extends AppCompatActivity {
 
     public void checkNews(View view) {
         startActivity(new Intent(this, NewsAPIActivity.class));
+    }
+
+    public void checkFood(View view) { startActivity(new Intent(this, FoodActivity.class));
     }
 }

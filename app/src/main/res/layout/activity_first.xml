@@ -47,4 +47,16 @@
         android:onClick="checkNews"
         android:textStyle="bold"
         />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="300dp"
+        android:text="Food"
+        android:textSize="25dp"
+        android:onClick="checkFood"
+        android:textStyle="bold"
+        />
 </RelativeLayout>

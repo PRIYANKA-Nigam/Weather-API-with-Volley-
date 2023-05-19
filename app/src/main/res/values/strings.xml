@@ -2,4 +2,5 @@
     <string name="app_name">Weather App</string>
     <string name="weather_update"><b><u>Weather Update</u></b></string>
     <string name="news_update"><b><u>News Update</u></b></string>
+    <string name="browse_food_menu_from_our_pantry"><u><i>Browse Food Menu from the pantry</i> </u></string>
 </resources>
