@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.weatherapp.Food.FoodActivity;
+import com.example.weatherapp.Food.RawFood.FoodDatabaseActivity;
+import com.example.weatherapp.Music.SongActivity;
 import com.example.weatherapp.News.NewsAPIActivity;
 
 public class FirstActivity extends AppCompatActivity {
@@ -26,5 +28,11 @@ public class FirstActivity extends AppCompatActivity {
     }
 
     public void checkFood(View view) { startActivity(new Intent(this, FoodActivity.class));
+    }
+
+    public void checkFoodDB(View view) { startActivity(new Intent(this, FoodDatabaseActivity.class));
+    }
+
+    public void checkSong(View view) { startActivity(new Intent(this, SongActivity.class));
     }
 }
