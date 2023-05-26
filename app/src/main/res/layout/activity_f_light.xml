@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flight"
+    tools:context=".FLightActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="Flight Search" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:hint="Enter Source(code)"
+            android:textColorHint="@drawable/hint_color"
+            />
+
+        <EditText
+            android:id="@+id/ed2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:hint="Enter Destination(code)"
+            android:textColorHint="@drawable/hint_color"
+            />
+        <EditText
+            android:id="@+id/ed3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:hint="Departure Date(YYYY-MM-DD format)"
+            android:textColorHint="@drawable/hint_color"
+            />
+        <EditText
+            android:id="@+id/ed4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:hint="Passengers Count"
+            android:textColorHint="@drawable/hint_color"
+            />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#0070c7"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:backgroundTint="@null"
+            android:text="GET"
+            android:onClick="getFlightDetails"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

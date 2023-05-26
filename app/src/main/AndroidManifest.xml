@@ -4,6 +4,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -13,10 +17,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WeatherApp">
-        <activity android:name=".SongActivity2"></activity>
+        <activity android:name=".Sensor.SensorActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCRnCyhhntShGMtpenRHXVpgAlme9nZrZI" />
+
+        <activity android:name=".PNR_Enquiry.PNR_View" />
+        <activity android:name=".PNR_Enquiry.PNR_Error" />
+        <activity android:name=".PNR_Enquiry.RailwayActivity" />
+        <activity android:name=".FLightActivity" />
+        <activity android:name=".Music.SongActivity2" />
         <activity android:name=".Music.SongActivity" />
         <activity android:name=".Food.RawFood.FoodDatabaseActivity" />
         <activity android:name=".Food.FoodActivity" />
+        <activity android:name=".Sensor.AccelerometerActivity" />
+        <activity android:name=".Sensor.GravityVibrationActivity" />
+        <activity android:name=".Sensor.ProximityActivity" />
+        <activity android:name=".Sensor.WalkStepsActivity" />
+        <activity android:name=".Sensor.CompassValueActivity" />
         <activity android:name=".FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

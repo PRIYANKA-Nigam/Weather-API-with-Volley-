@@ -2,7 +2,6 @@ package com.example.weatherapp.Music;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -11,14 +10,12 @@ import android.util.Log;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 import com.example.weatherapp.R;
-import com.example.weatherapp.SongActivity2;
 import com.spotify.sdk.android.authentication.AuthenticationClient;
 import com.spotify.sdk.android.authentication.AuthenticationRequest;
 import com.spotify.sdk.android.authentication.AuthenticationResponse;
 
-import java.util.HashSet;
-
 public class SongActivity extends AppCompatActivity {
+    //https://developer.spotify.com/dashboard -> goto this url and create web app .on login we get client id and credentials
     private static final String CLIENT_ID = "105bbda722f64d88b907c0d73762c50c";
     private static final String REDIRECT_URI = "com.example.weatherapp.Music://callback";
     private static final int REQUEST_CODE = 1337;

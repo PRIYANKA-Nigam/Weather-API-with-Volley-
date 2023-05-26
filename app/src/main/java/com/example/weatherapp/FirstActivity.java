@@ -1,6 +1,7 @@
 package com.example.weatherapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.dynamicanimation.animation.FlingAnimation;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +11,8 @@ import com.example.weatherapp.Food.FoodActivity;
 import com.example.weatherapp.Food.RawFood.FoodDatabaseActivity;
 import com.example.weatherapp.Music.SongActivity;
 import com.example.weatherapp.News.NewsAPIActivity;
+import com.example.weatherapp.PNR_Enquiry.RailwayActivity;
+import com.example.weatherapp.Sensor.SensorActivity;
 
 public class FirstActivity extends AppCompatActivity {
 
@@ -35,4 +38,14 @@ public class FirstActivity extends AppCompatActivity {
 
     public void checkSong(View view) { startActivity(new Intent(this, SongActivity.class));
     }
+
+    public void checkFlight(View view) { startActivity(new Intent(this, RailwayActivity.class));
+    }
+
+
+    public void checkSensors(View view) { startActivity(new Intent(this, SensorActivity.class));
+    }
+
+//    public void checkFlights(View view) {  startActivity(new Intent(this, FLightActivity.class));
+//    }
 }
